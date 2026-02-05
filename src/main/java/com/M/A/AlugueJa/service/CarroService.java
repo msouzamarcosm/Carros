@@ -16,6 +16,7 @@ public class CarroService {
     private CarroRepository repository;
 
     public List<ModeloCarro> listarTodos() {
+        System.out.println("test");
         return repository.findAll();
     }
 
