@@ -22,6 +22,7 @@ public class CarroService {
     public ModeloCarro salvar(ModeloCarro carro) {
         // Verificar se ja tem carro com a mesma placa e retornar erro
         carro.setPlaca(carro.getPlaca().toUpperCase());
+        System.out.println("commit 2");
         return repository.save(carro);
 
     }
